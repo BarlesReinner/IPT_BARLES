@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome</title>
+<style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: linear-gradient(to bottom right, #f9f9f9, #e0e0e0); /* Subtle gradient */
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  font-size: 24px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px; 
+}
+
+.header-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 30px; 
+  position: relative;
+  z-index: 1;
+}
+
+.text-area {
+  width: 60%;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.text-area h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db; 
+  padding-bottom: 10px;
+}
+
+.text-area p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #7f8c8d;
+  line-height: 1.7;
+  margin-bottom: 30px; 
+}
+
+.image-box {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s; 
+}
+
+.image-box img:hover {
+  transform: scale(1.05); 
+}
+
+/* Normal Button */
+.normal-button {
+  display: inline; 
+  margin: 20px auto; 
+  padding: 12px 30px; 
+  background-color: #3498db; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px; 
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.normal-button:hover {
+  background-color: #000000; 
+  transform: translateY(-2px); 
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-area, .image-box {
+    width: 90%;
+    text-align: center;
+  }
+
+  .text-area h2 {
+    font-size: 26px;
+  }
+
+  .text-area p {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+  <div>Welcome to My Page</div>
+  <div class="header-image">
+    <img src="images/cmu.ico" alt="Header Image">
+  </div>
+</header>
+
+<div class="content">
+  <div class="text-area">
+    <h2>About Me</h2>
+    <p> Hi! My name is Reinner S. Barles, and beyond being a BSIT student, I consider myself a person who values growth, relationships, and making a positive impact in the lives of others.
+
+      I’m someone who loves learning new things and taking on challenges. I believe that every experience, whether good or bad, shapes who we are and helps us grow. I’m passionate about personal and professional development and strive to be better every day. </p>
+    
+    <h2>More Info</h2>
+    <p> What I Value:<br>
+      <br>
+      Family and Friends: They are my support system, and I cherish the time I spend with them.<br>
+      Honesty and Integrity: I believe in staying true to my values and treating others with respect.<br>
+      Growth: Whether it’s learning a new skill or working on my character, I’m always open to becoming a better version of myself.<br><br>
+      Hobbies and Interests
+      Outside of my academic and professional pursuits, I enjoy:<br><br>
+      Music: Listening to music helps me relax and inspires me to stay creative.<br>
+      Nature Walks: Being outdoors helps me clear my mind and recharge.<br>
+      Playing Online Games: It's a passion that helps me develop my skills.<br>
+       </p>
+  </div>
+  <div class="image-box">
+    <img src="images/me.jfif" alt="Images">
+  </div>
+</div>
+
+<!-- Button to go to Bio-Data Form page -->
+<a href="html/bio.html" class="normal-button" id="learnMoreButton">Learn More</a>
+</body>
+</html>
